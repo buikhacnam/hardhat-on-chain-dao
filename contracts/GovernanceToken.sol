@@ -4,7 +4,9 @@ pragma solidity ^0.8.17;
 // Importing OpenZeppelin's ERC20 Votes
 import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Votes.sol";
 // https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/extensions/ERC20Votes.sol
-// The reason we need to use the ERC20Votes is because we need to use the ability to snapshot the token balances of the users at a certain point in time / block. This is needed for the governance token to work properly. It prevents someone from voting with a token that they just bought and then selling it right after. This is a common attack vector in DeFi.
+// The reason we need to use the ERC20Votes is because we need to use the ability to snapshot the token balances of the users at a certain point in time / block. 
+// This is needed for the governance token to work properly. It prevents someone from voting with a token that they just bought and then selling it right after. 
+// This is a common attack vector in DeFi.
 
 contract GovernanceToken is ERC20Votes {
     // s_maxSupply 1 million tokens
