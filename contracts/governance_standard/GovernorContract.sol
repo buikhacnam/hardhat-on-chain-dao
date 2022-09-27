@@ -10,6 +10,8 @@ import "@openzeppelin/contracts/governance/extensions/GovernorSettings.sol";
 
 
 // This contract created by OpenZeppelin Wizard: https://docs.openzeppelin.com/contracts/4.x/wizard
+
+// https://goerli.etherscan.io/address/0x8C4eb414c6276a1518c36B70E65C73d73c5CCafD#code
 contract GovernorContract is
   Governor,
   GovernorSettings,

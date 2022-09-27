@@ -8,6 +8,8 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Votes.sol";
 // This is needed for the governance token to work properly. It prevents someone from voting with a token that they just bought and then selling it right after. 
 // This is a common attack vector in DeFi.
 
+
+// https://goerli.etherscan.io/address/0x50510245411320d27eF0ab9205397aBAB1dc6610#code
 contract GovernanceToken is ERC20Votes {
     // s_maxSupply 1 million tokens
     uint256 public s_maxSupply = 1000000 * 10**18;

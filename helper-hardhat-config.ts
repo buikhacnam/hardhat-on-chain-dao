@@ -15,6 +15,10 @@ export interface networkConfigItem {
     kovan: {
       blockConfirmations: 6,
     },
+
+    goerli: {
+      blockConfirmations: 6,
+    }
   }
   
   export const developmentChains = ["hardhat", "localhost"]

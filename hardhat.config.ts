@@ -25,10 +25,10 @@ const config: HardhatUserConfig = {
       chainId: 31337,
       allowUnlimitedContractSize: true
     },
-    rinkeby: {
+    goerli: {
       url: RINKEBY_RPC_URL,
       accounts: [PRIVATE_KEY],
-      chainId: 4,
+      chainId: 5,
     },
   },
   solidity: {
