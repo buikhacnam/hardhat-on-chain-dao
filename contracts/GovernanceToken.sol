@@ -10,6 +10,8 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Votes.sol";
 
 
 // https://goerli.etherscan.io/address/0x50510245411320d27eF0ab9205397aBAB1dc6610#code
+
+//https://goerli.etherscan.io/address/0x53A8da33fe4Cb4e1083Ae140Fbf983e46F76ab3e#code
 contract GovernanceToken is ERC20Votes {
     // s_maxSupply 1 million tokens
     uint256 public s_maxSupply = 1000000 * 10**18;

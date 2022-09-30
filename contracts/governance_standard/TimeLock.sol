@@ -4,6 +4,8 @@ pragma solidity ^0.8.17;
 import "@openzeppelin/contracts/governance/TimelockController.sol";
 
 // https://goerli.etherscan.io/address/0x93f649eCA8dECebEae10b9D800ae5A28Be1E8EEC#code
+
+//https://goerli.etherscan.io/address/0x2A70C34c8A714e02B226ec937b90013C4adb6FBF#code
 contract TimeLock is TimelockController {
   // minDelay is how long you have to wait before executing. When proposing a new proposal, you have to wait for the delay to pass before the proposal can be executed.
   // proposers is the list of addresses that can propose

@@ -50,7 +50,7 @@ export async function propose(
     // save the proposalId
     storeProposalId(proposalId)
   
-    // The state of the proposal. 1 is not passed. 0 is passed.
+    // The state of the proposal. 1 is not passed. 0 is passed.???????????????
     console.log(`Current Proposal State: ${proposalState}`)
     // What block # the proposal was snapshot
     console.log(`Current Proposal Snapshot: ${proposalSnapShot}`)
