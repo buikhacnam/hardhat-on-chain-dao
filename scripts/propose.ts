@@ -42,7 +42,8 @@ export async function propose(
     // get proposalId from Event
     const proposalId = proposeReceipt.events[0].args[0]
 
-    console.log(`Proposed with proposal ID:\n  ${proposalId}`)
+    console.log(`Proposed with proposal ID:\n  ${proposalId}`) // Proposed with proposal ID:
+	//51508501457481436077634888669578781761098444908194579718864424217340756472817
 
     const proposalState = await governor.state(proposalId)
     const proposalSnapShot = await governor.proposalSnapshot(proposalId)
@@ -50,12 +51,11 @@ export async function propose(
     // save the proposalId
     storeProposalId(proposalId)
   
-    // The state of the proposal. 1 is not passed. 0 is passed.???????????????
-    console.log(`Current Proposal State: ${proposalState}`)
+    console.log(`Current Proposal State: ${proposalState}`) // Current Proposal State: 1
     // What block # the proposal was snapshot
-    console.log(`Current Proposal Snapshot: ${proposalSnapShot}`)
+    console.log(`Current Proposal Snapshot: ${proposalSnapShot}`) // Current Proposal Snapshot: 12
     // The block number the proposal voting expires
-    console.log(`Current Proposal Deadline: ${proposalDeadline}`)
+    console.log(`Current Proposal Deadline: ${proposalDeadline}`) // Current Proposal Deadline: 557
   
 }
 

@@ -24,9 +24,9 @@ async function main() {
 	)
 
     const voteTxReceipt = await voteTx.wait(1)
-    console.log("Event fired: ",voteTxReceipt.events[0].args.reason)
+    console.log("Event fired: ",voteTxReceipt.events[0].args.reason) // Event fired:  I vote for this proposal
     const proposalState = await governor.state(proposalId)
-    console.log(`Current Proposal State: ${proposalState}`)
+    console.log(`Current Proposal State: ${proposalState}`) // Current Proposal State: 1
 
     /**
      https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/governance/IGovernor.sol
@@ -46,8 +46,8 @@ async function main() {
         await moveBlocks(VOTING_PERIOD + 1)
     }
 
-    console.log(`Voted on proposal ${proposalId} with ${voteWay}`)
-    console.log(`Current Proposal State: ${proposalState}`)
+    console.log(`Voted on proposal ${proposalId} with ${voteWay}`) // oted on proposal 51508501457481436077634888669578781761098444908194579718864424217340756472817 with 1
+    console.log(`Current Proposal State: ${proposalState}`) // Current Proposal State: 1
 
 }
 

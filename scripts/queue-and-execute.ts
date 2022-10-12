@@ -57,7 +57,7 @@ export async function queueAndExecute() {
     // check if the governor has updated the Box contract
     const boxValue = await box.retrieve()
 
-    console.log("New Box value: ", boxValue.toString())
+    console.log("New Box value: ", boxValue.toString()) // New Box value:  77
 
 }
 
